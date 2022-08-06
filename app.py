@@ -5,11 +5,11 @@ import pickle
 
 
 app = Flask(__name__)
-model_rf = pickle.load(open('/content/drive/MyDrive/randomforestentropymodel.pkl','rb')) 
-model_gb = pickle.load(open('/content/drive/MyDrive/gaussianmodel.pkl','rb'))
-model_lr = pickle.load(open('/content/drive/MyDrive/model_lr.pkl','rb'))
-model_svcl = pickle.load(open('/content/drive/MyDrive/model_svcl.pkl','rb'))
-model_dt = pickle.load(open('/content/drive/MyDrive/model_dt.pkl','rb'))
+model_rf = pickle.load(open('randomforestentropymodel.pkl','rb')) 
+model_gb = pickle.load(open('gaussianmodel.pkl','rb'))
+model_lr = pickle.load(open('model_lr.pkl','rb'))
+model_svcl = pickle.load(open('model_svcl.pkl','rb'))
+model_dt = pickle.load(open('model_dt.pkl','rb'))
 
 
 @app.route('/')
